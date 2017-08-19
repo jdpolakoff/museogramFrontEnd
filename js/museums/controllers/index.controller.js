@@ -1,11 +1,10 @@
 angular
 .module('museoGram')
 .controller('MuseumIndexController', [
-  '$state',
   'Museum',
   MuseumIndexControllerFunction
 ])
 
-function MuseumIndexControllerFunction ($state, Museum) {
+function MuseumIndexControllerFunction (Museum) {
   this.museums = Museum.query()
 }

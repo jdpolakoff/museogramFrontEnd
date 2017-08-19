@@ -1,6 +1,6 @@
 angular
 .module('museoGram')
-factory('Museum', [
+.factory('Museum', [
   '$resource',
   museumService
 ])

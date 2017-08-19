@@ -2,8 +2,8 @@ angular
 .module('museoGram')
 .config([
 '$stateProvider',
-'$locationProvider'
-'$urlRouterProvider'
+'$locationProvider',
+'$urlRouterProvider',
   RouterFunction
   ])
 
