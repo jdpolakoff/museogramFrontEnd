@@ -5,8 +5,7 @@ angular
   'Museum',
   MuseumIndexControllerFunction
 ])
-.controller('MuseumShowController', [
-  '$stateParams',
-  'Museum',
-  MuseumShowControllerFunction
-])
+
+function MuseumIndexControllerFunction ($state, Museum) {
+  this.museums = Museum.query()
+}
