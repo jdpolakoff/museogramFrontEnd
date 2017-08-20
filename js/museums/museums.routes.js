@@ -21,4 +21,5 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
         controller: 'MuseumShowController',
         controllerAs: 'vm'
       })
+       $locationProvider.html5Mode(true)
       }
