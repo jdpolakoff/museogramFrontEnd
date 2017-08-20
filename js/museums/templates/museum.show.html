@@ -1,1 +1,8 @@
 <h2>{{vm.museum.name}}</h2>
+
+<div ng-repeat='artwork in vm.artworks'>
+  <p>{{artwork.name}}</p>
+  <p>{{artwork.artist}}</p>
+  <img src="{{artwork.thumbnail_url}}" />
+  <p>{{artwork.medium}}</p>
+</div>

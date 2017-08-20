@@ -7,4 +7,5 @@ angular
 
 function MuseumIndexControllerFunction (Museum) {
   this.museums = Museum.query()
+
 }
