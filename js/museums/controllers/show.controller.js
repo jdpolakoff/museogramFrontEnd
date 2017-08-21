@@ -9,6 +9,5 @@ angular
 
 function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
   this.museum = Museum.get({id: $stateParams.id})
-
   this.artworks = Artwork.query()
 }
