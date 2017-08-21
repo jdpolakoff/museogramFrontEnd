@@ -1,12 +1,7 @@
 <h2>{{ vm.museum.name }} </h2>
 
-<div ui-view>
-
-<div ng-repeat='artwork in vm.artworks'>
-  <a ui-sref="artworkShow({museum_id: museum.id, id: artwork.id})">
-    <img ng-src="{{ artwork.thumbnail_url }}" />
+<div class="square" ng-repeat='artwork in vm.museum.artworks'>
+  <a ui-sref="artworkShow({museum_id: vm.museum.id, id: artwork.id})">
+    <img class = "thumbnail" ng-src="{{ artwork.img_url }}" />
   </a>
 </div>
-</div>
-
-<a ui-sref="museumIndex">Back</a>

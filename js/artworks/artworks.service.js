@@ -6,7 +6,7 @@ angular
 ])
 
 function artworkService ($resource) {
-  return $resource('http://localhost:3000/artworks/:id', {}, {
+  return $resource('http://localhost:3000/museums/:id', {}, {
     update: {
       method: 'PUT'
     }

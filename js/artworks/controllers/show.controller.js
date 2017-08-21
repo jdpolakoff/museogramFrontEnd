@@ -8,6 +8,8 @@ angular
 ])
 
 function ArtworkShowControllerFunction ($stateParams, Museum, Artwork) {
-  this.artwork = Artwork.get({id: $stateParams.id})
-  console.log('I am being called');
+  console.log($stateParams.museum_id);
+  console.log($stateParams.id);
+  this.museum = Museum.get({id: $stateParams.museum_id})
+  this.index = $stateParams.id -1
 }
