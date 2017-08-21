@@ -10,14 +10,14 @@ function config ($stateProvider, $urlRouterProvider){
     .state('reviewsNew', {
       url: '/reviews/new',
       templateUrl: 'js/reviews/new.html',
-      controller: 'WdiNew',
+      controller: 'ReviewsNew',
       controllerAs: 'vm'
     })
     .state('reviewsEdit', {
       url: '/reviews/:id/edit',
       templateUrl: 'js/reviews/edit.html',
-      controller: 'WdiEdit',
+      controller: 'ReviewsEdit',
       controllerAs: 'vm'
     })
-    $urlRouterProvider.otherwise('/reviews')
+    // $urlRouterProvider.otherwise('/reviews')
   }
