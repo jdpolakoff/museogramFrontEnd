@@ -28,6 +28,13 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
         controller: 'ArtworkShowController',
         controllerAs: 'vm'
       })
+      .state('reviewIndex', {
+        parent: 'artworkShow',
+        url: '/reviews/',
+        templateUrl: 'js/reviews/templates/reviews.index.html',
+        controller: 'ArtworkShowController',
+        controllerAs: 'vm'
+      })
 
       // $urlRouterProvider.otherwise('/museums')
       }

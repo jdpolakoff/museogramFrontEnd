@@ -1,0 +1,8 @@
+<h2>All of the Reviews</h2>
+<div class="review" ng-repeat='review in vm.museum.artworks[vm.index].reviews'>
+  <p>{{ review.name }}</p>
+  <p>{{ review.title }}</p>
+  <p>{{ review.content }}</p>
+</div>
+
+<a ui-sref="artworkShow({museum_id: vm.museum.id, artwork_id: artworks[vm.index].id})">Back</a>
