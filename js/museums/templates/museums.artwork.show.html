@@ -1,3 +1,7 @@
 <h2>{{ vm.museum.artworks[vm.index].name }} </h2>
 <img ng-src="{{vm.museum.artworks[vm.index].img_url}}" alt="">
 <p>THIS IS A VIEW OF AN ARTWORK</p>
+
+<div ng-repeat='review in vm.museum.artworks[vm.index].reviews'>
+  <p>{{ review.name }}</p>
+</div>

@@ -11,5 +11,5 @@ function ArtworkShowControllerFunction ($stateParams, Museum, Artwork) {
   console.log($stateParams.museum_id);
   console.log($stateParams.id);
   this.museum = Museum.get({id: $stateParams.museum_id})
-  this.index = $stateParams.id -1
+  this.index = $stateParams.id - 1
 }
