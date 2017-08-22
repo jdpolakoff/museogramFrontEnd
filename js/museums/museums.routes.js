@@ -35,6 +35,20 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
         controller: 'ArtworkShowController',
         controllerAs: 'vm'
       })
+      .state('allArt', {
+        parent: 'museumShow',
+        url: '/museums/:id/allArt',
+        templateUrl: 'js/museums/templates/museum.show.all.html',
+        controller: 'MuseumShowController',
+        controllerAs: 'vm'
+      })
+      .state('paintings', {
+        parent: 'museumShow',
+        url: '/museums/:id/paintings',
+        templateUrl: 'js/museums/templates/museum.show.paintings.html',
+        controller: 'MuseumShowController',
+        controllerAs: 'vm'
+      })
 
       // $urlRouterProvider.otherwise('/museums')
       }

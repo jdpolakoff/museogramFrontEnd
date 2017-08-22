@@ -13,3 +13,7 @@
 .review {
   color: red;
 }
+.artworkbox {
+  display: flex;
+  flex-wrap: wrap;
+}

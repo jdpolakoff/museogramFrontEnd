@@ -1,6 +1,10 @@
 <h2>{{ vm.museum.artworks[vm.index].name }} </h2>
 <img ng-src="{{vm.museum.artworks[vm.index].img_url}}" alt="">
-<p>THIS IS A VIEW OF AN ARTWORK</p>
+<p>Medium: {{ vm.museum.artworks[vm.index].medium }}</p>
+<p>By: {{ vm.museum.artworks[vm.index].artist }}</p>
+<p>{{ vm.museum.artworks[vm.index].date }}</p>
+<p>{{ vm.museum.artworks[vm.index].on_display }}</p>
+
 
 <div ui-view>
   <a ui-sref="reviewIndex">Reviews</a>

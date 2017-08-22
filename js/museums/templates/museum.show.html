@@ -1,7 +1,19 @@
 <h2>{{ vm.museum.name }} </h2>
+<div class="museumdisplay">
+  <div class="museumoptions">
+    <a ui-sref="allArt">View All</a>
+    <a ui-sref="paintings">Paintings</a>
+  </div>
 
-<div class="square" ng-repeat='artwork in vm.museum.artworks'>
-  <a ui-sref="artworkShow({museum_id: vm.museum.id, id: artwork.id})">
-    <img class = "thumbnail" ng-src="{{ artwork.img_url }}" />
-  </a>
+<div ui-view>
+  <div class="artworkbox">
+    <div class="square" ng-repeat='artwork in vm.museum.artworks'>
+      <a ui-sref="artworkShow({museum_id: vm.museum.id, id: artwork.id})">
+        <img class = "thumbnail" ng-src="{{ artwork.img_url }}" />
+      </a>
+    </div>
+  </div>
+
+</div>
+
 </div>
