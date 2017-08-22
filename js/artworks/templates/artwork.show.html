@@ -1,9 +1,10 @@
 <h2>{{ vm.artwork.name }} </h2>
-<img ng-src="{{vm.artwork.img_url}}" alt="">
+<div class="polarbox">
+  <img class="polar" ng-src="{{vm.artwork.img_url}}" alt="">
+</div>
 <p>Medium: {{ vm.artwork.medium }}</p>
 <p>By: {{ vm.artwork.artist }}</p>
 <p>{{ vm.artwork.date }}</p>
-<p>{{ vm.artwork.on_display }}</p>
 
 
 <div ui-view>

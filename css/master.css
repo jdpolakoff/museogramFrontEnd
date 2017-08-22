@@ -4,14 +4,18 @@
 .thumbnail {
   width: 200px;
   object-fit: cover;
-  border: 5px solid gray;
+  /*border: 5px solid gray;*/
   box-shadow: 5px 5px 5px #D6DBDF;
+  border-style: groove;
+  border-color: #b8860b;
+  border-width: 10px;
 }
 .museumphoto {
   width: 400px;
 }
 .review {
   color: red;
+  background-color: purple;
 }
 .artworkbox {
   display: flex;
