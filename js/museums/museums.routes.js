@@ -35,6 +35,20 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
         controller: 'ArtworkShowController',
         controllerAs: 'vm'
       })
+      .state('reviewsNew', {
+        parent: 'reviewIndex',
+        url: '/new',
+        templateUrl: 'js/reviews/templates/reviews.new.html',
+        controller: 'ReviewsNew',
+        controllerAs: 'vm'
+      })
+      .state('reviewsEdit', {
+        parent: 'reviewIndex',
+        url: '/edit',
+        templateUrl: 'js/reviews/templates/reviews.edit.html',
+        controller: 'ReviewsEdit',
+        controllerAs: 'vm'
+      })
       .state('allArt', {
         parent: 'museumShow',
         url: '/museums/:id/allArt',

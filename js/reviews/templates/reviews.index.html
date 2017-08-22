@@ -5,4 +5,8 @@
   <p>{{ review.content }}</p>
 </div>
 
+<div ui-view>
+  <a ui-sref="reviewsNew">Add a review</a>
+</div>
+
 <a ui-sref="artworkShow({museum_id: vm.museum.id, artwork_id: artworks[vm.index].id})">Back</a>
