@@ -6,7 +6,7 @@ angular
 ])
 
 function reviewService ($resource) {
-  return $resource('http://localhost:3000/museums/:museum_id/artworks/:artwork_id', {}, {
+  return $resource('http://localhost:3000/reviews/:id', {}, {
     update: {
       method: 'PUT'
     }
