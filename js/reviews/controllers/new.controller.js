@@ -4,14 +4,14 @@ angular
   'ngResource'
 ])
 .controller('ReviewsNewController', [
-  '$stateParams',
+  '$state',
   'Museum',
   'Artwork',
   'Review',
   ReviewsNewControllerFunction
 ])
 
-function ReviewsNewControllerFunction () {
+function ReviewsNewControllerFunction ($state, Museum, Artwork, Review) {
 
   this.newReview = new Review()
   this.create = function () {
