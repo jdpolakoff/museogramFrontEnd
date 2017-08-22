@@ -1,0 +1,12 @@
+<h1>Edit Reviews</h1>
+
+<form>
+  <label>Name</label>
+  <input type="text" ng-model="vm.review.name">
+  <label>Title</label>
+  <input type="text" ng-model="vm.review.title">
+  <label>Content</label>
+  <input type="text" ng-model="vm.review.content">
+  <button type="submit" ng-click="vm.update()">Save</button>
+  <button type="submit" ng-click="vm.destroy()">Delete</button>
+</form>
