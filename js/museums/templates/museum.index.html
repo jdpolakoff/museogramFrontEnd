@@ -1,8 +1,10 @@
-<h2> Museums </h2>
+<h2> If you can still see this, you are still on the musueum index page </h2>
 
-<div ng-repeat='museum in vm.museums'>
-  <p>{{ museum.name }}</p>
-  <p>{{ museum.description }}</p>
-  <img class = "museumphoto" ng-src="{{ museum.photo_url }}" /><br><br>
-  <a ui-sref="museumShow({ id: museum.id })">View Artwork</a>
+<div ui-view>
+  <div ng-repeat='museum in vm.museums'>
+    <p>{{ museum.name }}</p>
+    <p>{{ museum.description }}</p>
+    <img class = "museumphoto" ng-src="{{ museum.photo_url }}" /><br><br>
+    <a ui-sref="museumShow({ id: museum.id })">View Artwork</a>
+  </div>
 </div>
