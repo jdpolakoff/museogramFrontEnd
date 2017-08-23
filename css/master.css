@@ -1,14 +1,14 @@
 .square {
   margin: 1%;
 }
-.thumbnail {
+.grid-item {
   width: 200px;
-  object-fit: cover;
+  /*object-fit: cover;*/
   /*border: 5px solid gray;*/
-  box-shadow: 5px 5px 5px #D6DBDF;
-  border-style: groove;
-  border-color: #b8860b;
-  border-width: 10px;
+  /*box-shadow: 5px 5px 5px #D6DBDF;*/
+  /*border-style: groove;*/
+  /*border-color: #b8860b;*/
+  /*border-width: 10px;*/
 }
 .museumphoto {
   width: 400px;
@@ -17,7 +17,8 @@
   color: red;
   background-color: purple;
 }
-.artworkbox {
+.grid {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }

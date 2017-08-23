@@ -5,8 +5,8 @@
   </div>
 
   <div ui-view>
-    <div class="artworkbox">
-      <div class="square" ng-repeat='artwork in vm.someArt'>
+    <div masonry>
+      <div class="masonry brick" ng-repeat='artwork in vm.someArt'>
         <a ui-sref="artworkShow({artwork_id: artwork.id})">
           <img class = "thumbnail" ng-src="{{ artwork.img_url }}" />
         </a>
