@@ -9,16 +9,3 @@
 <p class="card-text">{{ vm.artwork.on_display }}</p>
   </div>
 </div>
-
-<h2>{{ vm.artwork.name }} </h2>
-<div class="polarbox">
-  <img class="polar" ng-src="{{vm.artwork.img_url}}" alt="">
-</div>
-<p>Medium: {{ vm.artwork.medium }}</p>
-<p>By: {{ vm.artwork.artist }}</p>
-<p>{{ vm.artwork.date }}</p>
-
-
-<div ui-view>
-  <a ui-sref="reviewIndex">Reviews</a>
-</div>

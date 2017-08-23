@@ -14,17 +14,6 @@
   top: 0px;
 }
 
-.thumbnail {
-  width: 200px;
-  margin-bottom: 10px;
-  *object-fit: cover;
-  border: 5px solid gray;
-  box-shadow: 5px 5px 5px #D6DBDF;
-  border-style: groove;
-  border-color: #b8860b;
-  border-width: 10px;
-  min-height: 200px;
-}
 
 .museumphoto {
   width: 400px;
@@ -37,4 +26,25 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  width: 100%;
+}
+
+.museum-options {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: hotpink;
+  min-height: 100vh;
+}
+.museum-options a {
+  padding: 3%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+
+.museum-display {
+  display: flex;
+
 }
