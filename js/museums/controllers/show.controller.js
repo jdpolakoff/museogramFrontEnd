@@ -20,7 +20,8 @@ function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
 
 
 
-  // if (arts.length === count) {
-  //   // setTimeout(function() {
-  //   location.reload()
-    // }, 500)
+// if (arts.length === count) {
+//   setTimeout(function() {
+//   location.reload()
+// }, 1000)
+// }

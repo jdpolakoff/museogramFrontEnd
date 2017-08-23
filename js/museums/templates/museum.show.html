@@ -5,7 +5,7 @@
   </div>
 
   <div ui-view>
-    <div masonry column-width="230" class="grid" load-images="true">
+    <div masonry column-width="230" class="grid" load-images="false">
       <div class="masonry-brick" gutter=20 ng-repeat='artwork in vm.someArt'>
         <a ui-sref="artworkShow({artwork_id: artwork.id})">
           <img class = "thumbnail" ng-src="{{ artwork.img_url }}" />
