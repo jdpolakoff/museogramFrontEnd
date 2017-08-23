@@ -1,0 +1,10 @@
+This will just be the paintings...maybe.
+
+
+<div class="artworkbox">
+  <div class="square" ng-repeat='artwork in vm.museum.artworks'>
+    <a ui-sref="artworkShow({museum_id: vm.museum.id, id: artwork.id})">
+      <img class = "responsive" ng-src="{{ artwork.img_url }}" />
+    </a>
+  </div>
+</div>

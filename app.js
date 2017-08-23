@@ -2,7 +2,8 @@ angular
 .module('museoGram', [
   'ui.router',
   'ngResource',
-  'wu.masonry',
+  'ui.bootstrap',
+  'wu.masonry'
 ])
 
 
