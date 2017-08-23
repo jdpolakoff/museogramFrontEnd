@@ -1,0 +1,21 @@
+{
+  "name": "museogramFrontEnd",
+  "homepage": "https://github.com/jdpolakoff/museogramFrontEnd",
+  "authors": [
+    "Jonathan Polakoff <jdpolakoff@gmail.com>"
+  ],
+  "description": "project3",
+  "main": "app.js",
+  "keywords": [
+    "museogram"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
