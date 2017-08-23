@@ -1,0 +1,24 @@
+{
+  "name": "museogramfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "angular-masonry": "^0.17.0",
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdpolakoff/museogramFrontEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdpolakoff/museogramFrontEnd/issues"
+  },
+  "homepage": "https://github.com/jdpolakoff/museogramFrontEnd#readme"
+}

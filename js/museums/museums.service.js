@@ -6,7 +6,7 @@ angular
 ])
 
 function museumService ($resource) {
-  return $resource('http://localhost:3000/museums/:id', {}, {
+  return $resource(`${apiURL}/museums/:id`, {}, {
     update: {
       method: 'PUT'
     }

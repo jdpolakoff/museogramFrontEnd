@@ -6,7 +6,7 @@ angular
 ])
 
 function reviewService ($resource) {
-  return $resource('http://localhost:3000/reviews/:id', {}, {
+  return $resource(`${apiURL}/reviews/:id`, {}, {
     update: {
       method: 'PUT'
     }
