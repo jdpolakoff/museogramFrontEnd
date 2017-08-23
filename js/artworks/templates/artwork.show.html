@@ -1,11 +1,21 @@
+<div class = "museum-display">
+  <div class="artshow">
+    <div class="card">
+      <img class="card-img-top" alt="{{ vm.artwork.name }}" ng-src="{{vm.artwork.img_url}}">
+      <div class="card-body">
+        <h2 class="card-text">{{ vm.artwork.name }} </h2>
+        <p class="card-text">Medium: {{ vm.artwork.medium }}</p>
+        <p class="card-text">By: {{ vm.artwork.artist }}</p>
+        <p class="card-text">{{ vm.artwork.date }}</p>
+        <p class="card-text">{{ vm.artwork.on_display }}</p>
+      </div>
+    </div>
+    <div class="artshowlink">
+      <h2 class="card-text"><a ui-sref="museumShow({museum_id: vm.artwork.museum_id})">Back</a></h2>
+    </div>
+  </div>
 
-<div class="card" style="width: 20rem;">
-<img class="card-img-top" alt="Card image cap" ng-src="{{vm.artwork.img_url}}" alt="">
-  <div class="card-body">
-    <h2 class="card-text">{{ vm.artwork.name }} </h2>
-<p class="card-text">Medium: {{ vm.artwork.medium }}</p>
-<p class="card-text">By: {{ vm.artwork.artist }}</p>
-<p class="card-text">{{ vm.artwork.date }}</p>
-<p class="card-text">{{ vm.artwork.on_display }}</p>
+  <div ui-view class="reviews">
+    <a ui-sref="reviewIndex">Reviews</a>
   </div>
 </div>

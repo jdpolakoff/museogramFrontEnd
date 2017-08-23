@@ -1,3 +1,13 @@
+body {
+  background-color: #fbfbfb;
+}
+h1 {
+  margin-left: 3%;
+}
+.museum-info {
+  display: flex;
+  margin: 3%;
+}
 .square {
   margin: 1%;
 }
@@ -14,9 +24,8 @@
   top: 0px;
 }
 
-
 .museumphoto {
-  width: 400px;
+  width: 60%;
 }
 .review {
   color: red;
@@ -29,7 +38,8 @@
   width: 100%;
 }
 
-.museum-options {
+.museum-options, .reviews {
+
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -43,8 +53,56 @@
   color: #fff;
   font-size: 24px;
 }
-
 .museum-display {
   display: flex;
+}
+.card img {
+  border: 5px solid gray;
+  box-shadow: 5px 5px 5px #D6DBDF;
+  border-style: groove;
+  border-color: #b8860b;
+  border-width: 10px;
+  align-self: center;
+  margin: 3%;
 
+}
+.card {
+  margin-left: 3%;
+}
+
+.reviews {
+  margin-left: 3%
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+form button {
+  margin-top: 10%;
+}
+
+.cancel {
+  text-align: center;
+  margin-top: 2%;
+}
+.artshow {
+  width: 70%;
+}
+.artshowlink {
+  text-align: center;
+  margin-top: 3%;
+}
+.artshowlink a{
+  text-decoration: none;
+  color: #000;
+}
+.newreview {
+  background-color: hotpink;
+  width: 100%;
+  padding: 3%;
+  text-align: center;
+}
+.card-img-top {
+  width: 40%;
 }

@@ -1,10 +1,7 @@
-<h2> If you can still see this, you are still on the musueum index page </h2>
-
-<div ui-view>
-  <div ng-repeat='museum in vm.museums'>
+<div class="museum-info">
+  <div ui-view class="museum-card" ng-repeat='museum in vm.museums' style="background-image: url({{ museum.photo_url }}); background-size:cover">
     <p>{{ museum.name }}</p>
     <p>{{ museum.description }}</p>
-    <img class="img-thumbnail" ng-src="{{ museum.photo_url }}" /><br><br>
     <a ui-sref="museumShow({ museum_id: museum.id })">View Artwork</a>
   </div>
 </div>
