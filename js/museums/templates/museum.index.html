@@ -1,7 +1,8 @@
 <div class="museum-info">
-  <div ui-view class="museum-card" ng-repeat='museum in vm.museums' style="background-image: url({{ museum.photo_url }}); background-size:cover">
-    <p>{{ museum.name }}</p>
-    <p>{{ museum.description }}</p>
-    <a ui-sref="museumShow({ museum_id: museum.id })">View Artwork</a>
+
+  <div ui-view class="museum-card" ng-repeat='museum in vm.museums' style="background-image: url({{ museum.photo_url }}); background-size:cover; background-position: center;">
+    <p class="museum-name">{{ museum.name }}</p>
+  <a ui-sref="museumShow({ museum_id: museum.id })">  View Artwork</a>
   </div>
+  </a>
 </div>

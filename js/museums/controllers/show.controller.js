@@ -8,28 +8,37 @@ angular
 ])
 
 function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
-  this.museum = Museum.get({id: $stateParams.museum_id})
-  this.artworks = this.museum.artworks
-  let count = 25
-  let arts = []
-  for (i=1; i < count; i++) {
-    art = Artwork.get({id: i})
-    arts.push(art)
+  this.museum = Museum.get({id: $stateParams.museum_id}, (museum) => {
+    console.log(museum);
+    this.artworks = museum.artworks
+  })
+  this.category = ''
+  this.setCategory = setCategory
+  function setCategory(input) {
+    console.log(this.artworks);
+    this.category = input
+    console.log(this.category);
   }
-  this.someArt = arts
-
-  let count_draw = 650
-  let drawings = []
-  for (i=600; i < count_draw; i++) {
-    art = Artwork.get({id: i})
-    drawings.push(art)
-  }
-  this.drawings = drawings
-
+  // let count = 25
+  // let arts = []
+  // for (i=1; i < count; i++) {
+  //   art = Artwork.get({id: i})
+  //   arts.push(art)
+  // }
+  // this.someArt = arts
+  //
+  // let count_draw = 650
+  // let drawings = []
+  // for (i=600; i < count_draw; i++) {
+  //   art = Artwork.get({id: i})
+  //   drawings.push(art)
+  // }
+  // this.drawings = drawings
+  //
   // this.sculptures = Artwork.findAllByAttribute('category', 'Sculptures')
-  function filterFunction (query) {
-    console.log(query);
-  }
+  // function filterFunction (query) {
+  //   console.log(query);
+  // }
 
 }
 
