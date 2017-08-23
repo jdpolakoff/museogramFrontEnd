@@ -17,3 +17,10 @@ function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
   }
   this.someArt = arts
 }
+
+
+
+  // if (arts.length === count) {
+  //   // setTimeout(function() {
+  //   location.reload()
+    // }, 500)
