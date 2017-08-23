@@ -4,7 +4,7 @@
   <div ng-repeat='museum in vm.museums'>
     <p>{{ museum.name }}</p>
     <p>{{ museum.description }}</p>
-    <img class = "museumphoto" ng-src="{{ museum.photo_url }}" /><br><br>
+    <img class="img-thumbnail" ng-src="{{ museum.photo_url }}" /><br><br>
     <a ui-sref="museumShow({ museum_id: museum.id })">View Artwork</a>
   </div>
 </div>

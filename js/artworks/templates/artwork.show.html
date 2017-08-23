@@ -1,11 +1,13 @@
-<h2>{{ vm.artwork.name }} </h2>
-<img ng-src="{{vm.artwork.img_url}}" alt="">
-<p>Medium: {{ vm.artwork.medium }}</p>
-<p>By: {{ vm.artwork.artist }}</p>
-<p>{{ vm.artwork.date }}</p>
-<p>{{ vm.artwork.on_display }}</p>
-
-
+<div class="card" style="width: 20rem;">
+<img class="card-img-top" alt="Card image cap" ng-src="{{vm.artwork.img_url}}" alt="">
+  <div class="card-body">
+    <h2 class="card-text">{{ vm.artwork.name }} </h2>
+<p class="card-text">Medium: {{ vm.artwork.medium }}</p>
+<p class="card-text">By: {{ vm.artwork.artist }}</p>
+<p class="card-text">{{ vm.artwork.date }}</p>
+<p class="card-text">{{ vm.artwork.on_display }}</p>
+  </div>
+</div>
 <div ui-view>
   <a ui-sref="reviewIndex">Reviews</a>
 </div>

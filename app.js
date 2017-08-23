@@ -1,5 +1,6 @@
 angular
 .module('museoGram', [
   'ui.router',
-  'ngResource'
+  'ngResource',
+  'ui.bootstrap'
 ])
