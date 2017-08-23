@@ -3,21 +3,21 @@
 }
 .masonry-brick {
   width: 200px;
-  /*margin-bottom: 10px;*/
-  /*object-fit: cover;*/
-  /*border: 5px solid gray;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border: 5px solid gray;
   box-shadow: 5px 5px 5px #D6DBDF;
-  /*border-style: groove;*/
-  /*border-color: #b8860b;
-  border-width: 10px;*/
-  /*position: relative;*/
+  border-style: groove;
+  border-color: #b8860b;
+  border-width: 10px;
+  position: relative;
   top: 0px;
 }
 
 .thumbnail {
   width: 200px;
   margin-bottom: 10px;
-  *object-fit: cover;*/
+  *object-fit: cover;
   border: 5px solid gray;
   box-shadow: 5px 5px 5px #D6DBDF;
   border-style: groove;
