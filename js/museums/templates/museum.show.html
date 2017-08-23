@@ -13,13 +13,8 @@
   </div>
 
   <div ui-view class="container-fluid">
-<<<<<<< HEAD
-    <div masonry column-width="230" class="grid" load-images="false">
-      <div class="masonry-brick" gutter=20 ng-repeat='artwork in vm.artworks | filter:{ $: searchArts, category: "Baseball cards" } | limitTo : 25'>
-=======
     <div masonry column-width="230" class="grid" load-images="true">
       <div class="masonry-brick" gutter=20 ng-repeat='artwork in vm.artworks | filter: {$:searchArts, category: vm.category} | limitTo: 25'>
->>>>>>> 214dbc2133baa072146b297022461998cb49ab6e
         <a ui-sref="artworkShow({artwork_id: artwork.id})">
           <img class="img-thumbnail" ng-src="{{ artwork.img_url }}" />
         </a>

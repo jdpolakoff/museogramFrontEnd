@@ -5,7 +5,9 @@
   "main": "app.js",
   "dependencies": {
     "angular-masonry": "^0.17.0",
-    "bower": "^1.8.0"
+    "bower": "^1.8.0",
+    "express": "^4.15.4",
+    "gzippo": "^0.2.0"
   },
   "devDependencies": {},
   "scripts": {

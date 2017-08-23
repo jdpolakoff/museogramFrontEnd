@@ -8,7 +8,7 @@ angular
 
 
 // When running locally
-var apiURL = 'http://localhost:3000'
+// var apiURL = 'http://localhost:3000'
 
 // When running from Heroku
-// var apiURL = 'http://localhost:3000'
+var apiURL = 'https://museogram-api.herokuapp.com'

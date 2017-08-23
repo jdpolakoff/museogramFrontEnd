@@ -19,6 +19,7 @@ function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
     this.category = input
     console.log(this.category);
   }
+}
   // let count = 25
   // let arts = []
   // for (i=1; i < count; i++) {
@@ -40,7 +41,7 @@ function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
   //   console.log(query);
   // }
 
-  this.artworks = Artwork.query()
+  // this.artworks = Artwork.query()
 
   // let arts = []
   // for (i=1; i < count; i++) {
@@ -49,16 +50,16 @@ function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
   // }
   // this.someArt = arts
   //
-  this.category =
-}
+  // this.category =
+// }
 
 
 
 
-
-
-if (arts.length === count) {
-  setTimeout(function() {
-  location.reload()
-}, 1000)
-}
+//
+//
+// if (arts.length === count) {
+//   setTimeout(function() {
+//   location.reload()
+// }, 1000)
+// }
