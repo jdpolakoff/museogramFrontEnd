@@ -23,7 +23,11 @@ h1 {
   position: relative;
   top: 0px;
 }
-
+.museum-name {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
 .museumphoto {
   width: 60%;
 }
@@ -56,6 +60,15 @@ h1 {
 .museum-display {
   display: flex;
 }
+.museum-card {
+  width: 100%;
+  padding: 3%;
+}
+.museum-card a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
 .card img {
   border: 5px solid gray;
   box-shadow: 5px 5px 5px #D6DBDF;
@@ -64,7 +77,6 @@ h1 {
   border-width: 10px;
   align-self: center;
   margin: 3%;
-
 }
 .card {
   margin-left: 3%;
@@ -104,5 +116,5 @@ form button {
   text-align: center;
 }
 .card-img-top {
-  width: 40%;
+  width: 30%;
 }

@@ -5,27 +5,21 @@
     <input type="text" placeholder="Search Our Database" ng-model="searchArts">
     <!-- <button type="text" value="Paintings" ng-model="Paintings">Paintings</button>
     <button type="text" value="Drawings" ng-model=drawings>Drawings</button> -->
-    <a ng-model="Paintings">Paintings</a>
-    <a href="This is a link">Sculpture</a>
-    <a ng-model="Drawings">Drawings</a>
-    <a href="This is a link">Jewelry</a>
-    <a href="This is a link">Baseball Cards</a>
-    <a href="This is a link">Pottery</a>
-    <a href="This is a link">Watercolors</a>
-    <a href="This is a link">Drinking Vessels</a>
-    <a href="This is a link">Dresses</a>
-    <a href="This is a link">Glass</a>
-    <a href="This is a link">Paper</a>
-    <a href="This is a link">Porcelain</a>
-    <a href="This is a link">Musical Instruments</a>
-    <a href="This is a link">Wood</a>
-    <a href="This is a link">Swords</a>
-    <a href="This is a link">Gold</a>
+    <li ng-click="vm.setCategory('Paintings')">Paintings</li>
+    <!-- <li ng-click="vm.setCategory('Sculptures')">Sculptures</li> -->
+    <li ng-click="vm.setCategory('Drawings')">Drawings</li>
+    <li ng-click="vm.setCategory('Jewelry')">Jewelry</li>
+    <li ng-click="vm.setCategory('Baseball cards')">Baseball Cards</li>
   </div>
 
   <div ui-view class="container-fluid">
+<<<<<<< HEAD
     <div masonry column-width="230" class="grid" load-images="false">
       <div class="masonry-brick" gutter=20 ng-repeat='artwork in vm.artworks | filter:{ $: searchArts, category: "Baseball cards" } | limitTo : 25'>
+=======
+    <div masonry column-width="230" class="grid" load-images="true">
+      <div class="masonry-brick" gutter=20 ng-repeat='artwork in vm.artworks | filter: {$:searchArts, category: vm.category} | limitTo: 25'>
+>>>>>>> 214dbc2133baa072146b297022461998cb49ab6e
         <a ui-sref="artworkShow({artwork_id: artwork.id})">
           <img class="img-thumbnail" ng-src="{{ artwork.img_url }}" />
         </a>
