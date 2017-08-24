@@ -22,12 +22,16 @@
 
 
   <div class="container-fluid">
+    <div class="loading" ng-show="vm.loading"> Loading... <br>
+      <img ng-src="loading.gif" />
+     </div>
     <div masonry column-width="230" class="grid" load-images="true">
-      <div class="masonry-brick" gutter=20 ng-repeat='artwork in vm.artworks | filter: {$:searchArts, category: vm.category} | limitTo: 25'>
+      <div class="masonry-brick" gutter=20 ng-repeat='artwork in vm.artworks | filter: {$:searchArts, category: vm.category} | limitTo: vm.limit'>
         <a ui-sref="artworkShow({museum_id: artwork.museum_id, artwork_id: artwork.id})">
           <img class="img-thumbnail" ng-src="{{ artwork.img_url }}" />
         </a>
       </div>
     </div>
+    <button ng-click="vm.increment(25)" ng-show="vm.loaded" class="noMore">View more</button>
   </div>
 </div>
