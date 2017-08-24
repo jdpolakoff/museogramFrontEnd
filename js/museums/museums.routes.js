@@ -20,11 +20,9 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
         templateUrl: 'js/museums/templates/museum.show.html',
         controller: 'MuseumShowController',
         controllerAs: 'vm'
-
       })
       .state('artworkShow', {
-        parent: 'museumShow',
-        url: '/artworks/:artwork_id',
+        url: '/museums/:museum_id/artworks/:artwork_id',
         templateUrl: 'js/artworks/templates/artwork.show.html',
         controller: 'ArtworkShowController',
         controllerAs: 'vm'
