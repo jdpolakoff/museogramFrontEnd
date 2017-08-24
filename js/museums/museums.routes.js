@@ -43,20 +43,16 @@ function RouterFunction ($stateProvider, $locationProvider, $urlRouterProvider) 
         controller: 'ReviewsNewController',
         controllerAs: 'vm'
       })
-      // .state('allArt', {
-      //   parent: 'museumShow',
-      //   url: '/museums/:id/allArt',
-      //   templateUrl: 'js/museums/templates/museum.show.all.html',
-      //   controller: 'MuseumShowController',
-      //   controllerAs: 'vm'
-      // })
-      // .state('paintings', {
-      //   parent: 'museumShow',
-      //   url: '/museums/:id/paintings',
-      //   templateUrl: 'js/museums/templates/museum.show.paintings.html',
-      //   controller: 'MuseumShowController',
-      //   controllerAs: 'vm'
-      // })
+      .state('navbar.show', {
+        url: '/artworks/:artwork_id',
+        views: {
+          "@" : {
+            templateUrl: 'app/photos/show/index.html',
+            controller: 'PhotoController'
+          }
+        },
+        hideNavbar: true
+      })
 
       $urlRouterProvider.otherwise('/museums')
       }
