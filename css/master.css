@@ -125,7 +125,7 @@ form button {
 .img-thumbnail {
   width: 100%;
   padding: 0;}
-  
+
 
 .list {
   text-align: center;
@@ -135,9 +135,7 @@ form button {
 
 .list:hover {
   border: 2px solid green;
-  box-shadow: 2px 2px 2px #D6DBDF;
   border-style: groove;
-  border-color: #b8860b;
-  border-width: 6px;  cursor: pointer;
+  cursor: pointer;
   background-color: #fbfbfb;
 }
