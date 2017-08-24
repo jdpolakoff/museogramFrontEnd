@@ -43,7 +43,7 @@ form button {
   border: 5px solid gray;
   box-shadow: 5px 5px 5px #D6DBDF;
   border-style: groove;
-  border-color: #4286f4;
+  border-color: #2a75ed;
   border-width: 10px;
 }
 
@@ -59,8 +59,12 @@ form button {
   display: flex;
   flex-direction: column;
   width: 20%;
-  background-color: #4286f4;
+  background-color: #5795f9;
   min-height: 100vh;
+  box-shadow: 5px 5px 5px #D6DBDF;
+  border-style: groove;
+  border-color: #2a75ed;
+  border-width: 10px;
 }
 .museum-options a {
   padding: 3%;
