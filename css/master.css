@@ -121,3 +121,8 @@ form button {
 .logo {
   width: 20%;
 }
+
+.img-thumbnail {
+  width: 100%;
+  padding: 0;
+}
