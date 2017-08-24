@@ -15,7 +15,7 @@ function ReviewsNewControllerFunction ($stateParams, $state, Museum, Artwork, Re
   this.newReview.artwork_id = $stateParams.artwork_id
   this.create = function () {
     this.newReview.$save(() => {
-      $state.go('reviewIndex')
+      $state.go('artworkShow', {}, {reload: true})
     }
 
     )

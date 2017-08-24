@@ -4,12 +4,27 @@ body {
 h1 {
   margin-left: 3%;
 }
+form, input {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  color: #000;
+}
+form button {
+  margin-top: 10%;
+}
 .museum-info {
   display: flex;
   margin: 3%;
 }
-.square {
-  margin: 1%;
+.museum-name {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 8px solid #4286f4;
+}
+.museumphoto {
+  width: 60%;
 }
 .masonry-brick {
   width: 200px;
@@ -23,19 +38,7 @@ h1 {
   position: relative;
   top: 0px;
 }
-.museum-name {
-  font-size: 50px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #4286f4;
-}
-.museumphoto {
-  width: 60%;
-}
-.review {
-  color: red;
-  background-color: purple;
-}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +67,7 @@ h1 {
 .museum-card {
   width: 100%;
   padding: 3%;
+  text-shadow: 2px 2px #000000;
 }
 .museum-card a {
   text-decoration: none;
@@ -82,19 +86,40 @@ h1 {
 .card {
   margin-left: 3%;
 }
-
+.card-img-top {
+  width: 30%;
+}
 .reviews {
-  margin-left: 3%
+  margin-left: 3%;
+  text-align: center;
+  padding: 2%;
+  color: #fff;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  margin: 5%;
+.reviews a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 2%;
 }
-form button {
-  margin-top: 10%;
+.review {
+  border: 2px solid #fff;
+  border-style: groove;
+  background-color: #fbfbfb;
+  color: #000;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 5%;
 }
-
+.review-title {
+  font-weight: bold;
+}
+.newreview {
+  background-color: #F9690e;
+  width: 100%;
+  padding: 3%;
+  text-align: center;
+}
 .cancel {
   text-align: center;
   margin-top: 2%;
@@ -103,40 +128,38 @@ form button {
   width: 70%;
 }
 .artshowlink {
-  text-align: center;
   margin-top: 3%;
+  padding-left: 2%;
+  align-items: center;
+
 }
 .artshowlink a{
   text-decoration: none;
-  color: #000;
+  color: #fff;
+  background-color: #4286f4;
+  padding: 1%;
 }
-.newreview {
-  background-color: hotpink;
-  width: 100%;
-  padding: 3%;
-  text-align: center;
-}
-.card-img-top {
-  width: 30%;
-}
+
 .logo {
   width: 20%;
 }
 
 .img-thumbnail {
   width: 100%;
-  padding: 0;}
-
+  padding: 0;
+}
 
 .list {
   text-align: center;
   font-size: 20px;
   margin-top: 2%;
+  color: #fff;
 }
 
-.list:hover {
-  border: 2px solid green;
+.list:hover, .artshowlink a:hover, .reviews a:hover {
+  border: 2px solid #fff;
   border-style: groove;
   cursor: pointer;
   background-color: #fbfbfb;
+  color: #000;
 }

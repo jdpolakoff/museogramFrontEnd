@@ -1,6 +1,9 @@
 <div class = "museum-display">
   <div class="artshow">
     <div class="card">
+      <div class="artshowlink">
+        <h2><a ui-sref="museumShow({museum_id: vm.artwork.museum_id})"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</a></h2>
+      </div>
       <img class="card-img-top" alt="{{ vm.artwork.name }}" ng-src="{{vm.artwork.img_url}}">
       <div class="card-body">
         <h2 class="card-text">{{ vm.artwork.name }} </h2>
@@ -10,12 +13,20 @@
         <p class="card-text">{{ vm.artwork.on_display }}</p>
       </div>
     </div>
-    <div class="artshowlink">
-      <h2 class="card-text"><a ui-sref="museumShow({museum_id: vm.artwork.museum_id})">Back</a></h2>
-    </div>
+
   </div>
 
-  <div ui-view class="reviews">
-    <a ui-sref="reviewIndex">Reviews</a>
+  <div class="reviews">
+    <h2>Reviews</h2>
+    <div ui-view class="review-container">
+      <div class="review" ng-repeat='review in vm.artwork.reviews'>
+        <p class="review-title">{{ review.title }}</p>
+        <p class ="review-name">Reviewer: {{ review.name }}</p>
+        <p>{{ review.content }}</p>
+      </div>
+
+      <a ui-sref="reviewsNew">Add a Review</a>
+    </div>
+
   </div>
 </div>
