@@ -7,8 +7,8 @@
       <img class="card-img-top" alt="{{ vm.artwork.name }}" ng-src="{{vm.artwork.img_url}}">
       <div class="card-body">
         <h2 class="card-text">{{ vm.artwork.name }} </h2>
-        <p class="card-text">Medium: {{ vm.artwork.medium }}</p>
-        <p class="card-text">By: {{ vm.artwork.artist }}</p>
+        <p class="card-text">{{ vm.artwork.medium }}</p>
+        <p class="card-text">{{ vm.artwork.artist }}</p>
         <p class="card-text">{{ vm.artwork.date }}</p>
         <p class="card-text">{{ vm.artwork.on_display }}</p>
       </div>

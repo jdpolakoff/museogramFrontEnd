@@ -20,6 +20,8 @@ function MuseumShowControllerFunction ($stateParams, Museum, Artwork) {
   this.setCategory = setCategory
   function setCategory(input) {
     this.category = input
+    this.limit = 25
+    this.loaded = true
   }
   this.limit = 25
   this.increment = increment
