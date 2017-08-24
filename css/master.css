@@ -39,6 +39,14 @@ form button {
   top: 0px;
 }
 
+.masonry-brick:hover {
+  border: 5px solid gray;
+  box-shadow: 5px 5px 5px #D6DBDF;
+  border-style: groove;
+  border-color: #4286f4;
+  border-width: 10px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +81,10 @@ form button {
   text-decoration: none;
   color: #fff;
   font-size: 24px;
+}
+
+.card a {
+  background-color: #4286f4;
 }
 .card img {
   border: 5px solid gray;
