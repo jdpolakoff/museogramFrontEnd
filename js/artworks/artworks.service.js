@@ -6,7 +6,8 @@ angular
 ])
 
 function artworkService ($resource) {
-  return $resource(`${apiURL}/artworks/:id`, {}, {
+  // Updated to use nested rails route
+  return $resource(`${apiURL}/museums/:museum_id/artworks/:id`, {}, {
     update: {
       method: 'PUT'
     }
