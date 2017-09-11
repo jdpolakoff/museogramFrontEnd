@@ -1,3 +1,4 @@
+// indentation fixes
 angular
 .module('museoGram')
 .factory('Review', [
@@ -10,5 +11,5 @@ function reviewService ($resource) {
     update: {
       method: 'PUT'
     }
-})
+  })
 }
